@@ -1,4 +1,4 @@
-# ui-reacttable [![GitHub Actions status |pink-gorilla/ui-aggrid](https://github.com/pink-gorilla/ui-aggrid/workflows/CI/badge.svg)](https://github.com/pink-gorilla/ui-aggrid/actions?workflow=CI)[![Clojars Project](https://img.shields.io/clojars/v/org.pinkgorilla/ui-aggrid.svg)](https://clojars.org/org.pinkgorilla/ui-aggrid)
+# ui-reacttable [![GitHub Actions status |pink-gorilla/ui-reacttable](https://github.com/pink-gorilla/ui-reacttable/workflows/CI/badge.svg)](https://github.com/pink-gorilla/ui-reacttable/actions?workflow=CI)[![Clojars Project](https://img.shields.io/clojars/v/org.pinkgorilla/ui-reacttable.svg)](https://clojars.org/org.pinkgorilla/ui-reacttable)
 
 https://react-table-v7.tanstack.com/docs/examples/footers
 
