@@ -2,6 +2,10 @@
 
 https://react-table-v7.tanstack.com/docs/examples/footers
 
+
+The old api is implemented also here:
+https://github.com/alex314159/react-table-vega-template/blob/master/src/main/reacttabledefinition.cljs
+
 ## Demo
 
 ```
