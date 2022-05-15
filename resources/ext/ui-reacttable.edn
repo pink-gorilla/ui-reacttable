@@ -1,0 +1,13 @@
+{:name "ui-reacttable"
+ ; build
+ :lazy true
+ :cljs-namespace [pinkgorilla.reacttable.reacttable]
+ :cljs-bindings {'react-table pinkgorilla.reacttable.reacttable/react-table}
+ :cljs-ns-bindings {}
+ ; theme
+ :theme {:available  {}
+         :current {}}
+ ; run
+ :clj-require []
+ 
+}

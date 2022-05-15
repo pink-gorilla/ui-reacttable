@@ -43,7 +43,7 @@
    ;[:div.text-green-300 "grid1"]
    [:div.grid.grid-cols-2.w-full.h-full.bg-blue-300.overflow-scroll
     [:div [link-href "/" "main"]]
-    [example]
+    ;[example]
     [react-table {:data data :columns headers}]
     [react-table {:data data-big :columns headers :style {:width "100%" :overflow "scroll"}}]]])
 
