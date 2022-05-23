@@ -42,9 +42,9 @@
    :extra-deps {com.workframe/garamond {:mvn/version "0.4.0"}}}
 
 ; RUN SERVICES (keep running)
-  :docs
-  {:extra-deps {org.pinkgorilla/goldly-docs {:mvn/version "0.4.546"
-                                             :exclusions [org.pinkgorilla/ui-reacttable]}}
+  :goldly
+  {:extra-deps {org.pinkgorilla/goldly {:mvn/version "0.4.546"
+                                        :exclusions [org.pinkgorilla/ui-reacttable]}}
    :extra-paths ["demo"]
    :jvm-opts ["-Dmaven.wagon.rto=90000"]
    :exec-fn modular.system/start!
