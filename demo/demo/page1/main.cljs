@@ -1,3 +1,7 @@
+(ns demo.page1.main
+  (:require
+   [goldly.page :as page]
+   [demo.lib.ui :refer [link-href]]))
 
 ; main page 
 
@@ -7,4 +11,4 @@
    [link-href "devtools/help" "goldly developer tools"]
    [link-href "/grid" "grid"]])
 
-(add-page demo-page :user/main)
+(page/add demo-page :user/main)

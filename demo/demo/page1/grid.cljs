@@ -1,14 +1,8 @@
-
-(rf/dispatch [:css/set-theme-component :tailwind-full "light"])
-(rf/dispatch [:css/set-theme-component :tailwind-girouette false])
-
-(defn link-href [href text]
-  [:a.bg-blue-300.cursor-pointer.hover:bg-red-700.m-1
-   {:href href} text])
-
-(defn link-fn [fun text]
-  [:a.bg-blue-300.cursor-pointer.hover:bg-red-700.m-1
-   {:on-click fun} text])
+(ns demo.page1.grid
+  (:require
+   [goldly.page :as page]
+   [ui.reacttable :refer [react-table]]
+   [demo.lib.ui :refer [link-href]]))
 
 (def data
   [{:firstName "John" :lastName "Doe" :age 53 :Status "web surfing"}
@@ -47,4 +41,4 @@
     [react-table {:data data :columns headers}]
     [react-table {:data data-big :columns headers :style {:width "100%" :overflow "scroll"}}]]])
 
-(add-page grid-page :user/grid)
+(page/add grid-page :user/grid)

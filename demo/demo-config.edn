@@ -1,5 +1,6 @@
 {:goldly {:lazy true
-          :autoload-cljs-dir ["demo/page1"]
+          :autoload-cljs-dir ["demo/lib"
+                              "demo/page1"]
           :routes {:app {"" :user/main
                          "grid" :user/grid}}}}
 

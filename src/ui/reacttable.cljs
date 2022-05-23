@@ -1,4 +1,4 @@
-(ns pinkgorilla.reacttable.reacttable
+(ns ui.reacttable
   (:require
    [clojure.set :refer [rename-keys]]
    [re-frame.core :as rf]

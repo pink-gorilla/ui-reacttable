@@ -41,23 +41,8 @@
   {:main-opts ["-m" "garamond.main"]
    :extra-deps {com.workframe/garamond {:mvn/version "0.4.0"}}}
 
-  ; demo ui
-
-  :goldly
-  {:extra-deps {org.pinkgorilla/goldly {:mvn/version "0.4.519"
-                                        :exclusions [org.pinkgorilla/ui-reacttable]}
-                org.pinkgorilla/reval {:mvn/version "0.0.37"}
-                org.pinkgorilla/pinkie {:mvn/version "0.3.11"}
-                org.pinkgorilla/ui-repl {:mvn/version "0.0.43"} ; reframe in gold
-                }
-   :jvm-opts ["-Dmaven.wagon.rto=90000"]
-   :exec-fn goldly.app.build/goldly-build
-   :exec-args {:profile "compile2"
-               :config ["webly/config.edn" "goldly/config.edn"]}}
-
-
 ; RUN SERVICES (keep running)
-  :docs-run
+  :docs
   {:extra-deps {org.pinkgorilla/goldly-docs {:mvn/version "0.4.519"
                                              :exclusions [org.pinkgorilla/ui-reacttable]}}
    :extra-paths ["demo"]
@@ -69,13 +54,9 @@
                :services "goldly/docs-services.edn"}}
 
   ; BUILD BUNDLE (then exit)
-  :docs-build
-  {:extra-deps {org.pinkgorilla/goldly-docs {:mvn/version "0.4.519"
-                                             :exclusions [org.pinkgorilla/ui-reacttable]}}
-   :jvm-opts ["-Dmaven.wagon.rto=90000"]
-   :exec-fn goldly.app.build/goldly-build
-   :exec-args {:profile "compile2"
-               :config ["webly/config.edn" "goldly/config.edn" "goldly/docs-config.edn"]}}
+  :build
+  {:exec-fn goldly.app.build/goldly-build
+   :exec-args {:profile "compile2"}}
 
 
 
