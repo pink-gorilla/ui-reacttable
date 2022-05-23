@@ -31,7 +31,7 @@ jobs:
       shell: bash
     - name: Install dependencies
       run: |
-        clojure -X:goldly :profile '"npm-install"'
+        clojure -X:goldly:build :profile '"npm-install"'
         ./scripts/copy_res.sh
     #- name: clj-kondo
     #  run: clojure -M:lint
