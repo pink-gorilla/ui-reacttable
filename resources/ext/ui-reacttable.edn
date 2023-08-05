@@ -2,7 +2,7 @@
  ; build
  :lazy-sci true
  :cljs-namespace [ui.reacttable]
- :cljs-ns-bindings {ui.reacttable {'react-table ui.reacttable/react-table}}
+ :cljs-ns-bindings {'ui.reacttable {'react-table ui.reacttable/react-table}}
  ; theme
  :theme {:available  {}
          :current {}}}
